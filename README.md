@@ -1,4 +1,4 @@
-# metalsmith-rootpath
+# metalsmith-rootpath [![Build Status](https://travis-ci.org/radiovisual/metalsmith-rootpath.svg)](https://travis-ci.org/radiovisual/metalsmith-rootpath)
 > Easily find the relative path to the root directory in your Metalsmith templates. 
 
 ## Install
