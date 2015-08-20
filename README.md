@@ -1,5 +1,7 @@
 # metalsmith-rootpath [![Build Status](https://travis-ci.org/radiovisual/metalsmith-rootpath.svg)](https://travis-ci.org/radiovisual/metalsmith-rootpath)
-> Easily find the relative path to the root directory in your Metalsmith templates. 
+> Easily find the relative path to the root directory in your Metalsmith templates.
+> 
+> *Makes relative links a breeze!*
 
 ## Install
 ```sh
@@ -18,8 +20,7 @@ Metalsmith(__dirname)
   
 ```
 
-Now you have a `rootPath` value assigned to the metadata of the files in your Metalsmith build. 
-**This is useful when building relative links!**
+**Now you have a `rootPath` value assigned to the metadata of the files in your Metalsmith build.** 
 
 ## Examples
 
@@ -30,12 +31,12 @@ Lets assume you have a directory structure like this:
         dir1/
            index.html
         dir2/
-           dir2a/
+           foo/
               index.html
         dir3/
-           dir3a/
-              dir3b/
-                 dir3c/
+           foo/
+              bar/
+                 baz/
                    index.html
 ```
 
@@ -45,14 +46,12 @@ The `rootPath` values in each index.html file would be:
 | -----------------------------------|-------------------|
 | index.html                         | ""                | 
 | dir1/index.html                    | "../"             |
-| dir2/dir2a/index.html              | "../../"          |   
-| dir3/dir3a/dir3b/dir3c/index.html  | "../../../../"    | 
+| dir2/foo/index.html                | "../../"          |   
+| dir3/foo/bar/baz/index.html        | "../../../../"    | 
 
 
 #### Relative Links
 Use the `rootPath` variable anywhere you want to grab static files relative to your directory. 
-*Note that I am using the Handlebars syntax, but the `rootPath` value is assigned to the file's metadata, so it can 
-be accessed within any template engine.*
  
 ```html
 <link src="{{rootPath}}main.css" type="text/css" />
@@ -73,6 +72,8 @@ template `partial/navigation.hbs`
 
 ### Important Notes
 
+1. I am using the Handlebars syntax in the above examples, but the `rootPath` value is assigned to every file's metadata, 
+so it can be accessed just as easily with your template language of choice.
 1. This plugin is only useful if your `build/` directory is identical to your `src/` structure. Meaning, none of the 
 Metalsmith plugins you have on your build chain change the directory structure you have presented in your `src` folder.
 

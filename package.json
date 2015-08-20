@@ -18,7 +18,11 @@
     "root",
     "rootpath",
     "relative",
-    "urls"
+    "urls",
+    "links",
+    "paths",
+    "path",
+    "link"
   ],
   "author": "Michael Wuergler <senjudev@gmail.com> (http://numetriclabs.com)",
   "license": "MIT",
