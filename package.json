@@ -1,0 +1,36 @@
+{
+  "name": "metalsmith-rootpath",
+  "version": "0.1.1",
+  "description": "Easily find the relative path to the root directory in your Metalsmith templates",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radiovisual/metalsmith-rootpath.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "root",
+    "rootpath",
+    "relative",
+    "urls"
+  ],
+  "author": "Michael Wuergler <senjudev@gmail.com> (http://numetriclabs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radiovisual/metalsmith-rootpath/issues"
+  },
+  "homepage": "https://github.com/radiovisual/metalsmith-rootpath#readme",
+  "devDependencies": {
+    "co-mocha": "^1.1.2",
+    "harmonize": "^1.4.4",
+    "metalsmith": "^2.0.1",
+    "mocha": "^2.2.5",
+    "rimraf": "^2.4.2"
+  }
+}
