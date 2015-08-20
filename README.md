@@ -24,7 +24,7 @@ Metalsmith(__dirname)
 
 ## Examples
 
-Lets assume you have a directory structure like this:
+Let's assume you have a directory structure like this:
 
 ```
         index.html
