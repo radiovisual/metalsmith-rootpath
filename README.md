@@ -51,18 +51,21 @@ The `rootPath` values in each `index.html` file would be:
 
 
 #### Relative Links
-Use the `rootPath` variable anywhere you want to grab static files relative to your directory. 
- 
+Use the `rootPath` variable anywhere you want to grab static files relative to your directory. `rootPath` will 
+find the root folder no matter how many levels deep your templates are.
+
+For example, if the following line of code where placed in `dir3/foo/bar/baz/index.html`
 ```html
 <link src="{{rootPath}}css/main.css" type="text/css" />
 ```
 
-`rootPath` will dynamically find the root folder no matter how many levels deep your templates are. Assume you have a 
-template file at this location: `/foo/bar/baz/biz/index.html`, the generated HTML from the above template code would be:
-
+It would result in the following output:
 ```html
 <link src="../../../../css/main.css" type="text/css" />
 ```
+
+
+
 
 #### Relative Navigation
 
