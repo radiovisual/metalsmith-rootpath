@@ -19,7 +19,7 @@ function plugin(){
         Object.keys(files).forEach(function(file){
             setImmediate(done);
 
-            var re = /(\/)+/g;
+            var re = /(\/|\\)+/g;
 
             var rootPath = "";
             var a;
