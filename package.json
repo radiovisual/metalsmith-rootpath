@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-rootpath",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Easily find the relative path to the root directory in your Metalsmith templates",
   "main": "lib/index.js",
   "directories": {
