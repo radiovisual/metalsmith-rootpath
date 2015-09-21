@@ -54,7 +54,7 @@ The `rootPath` values in each `index.html` file would be:
 Use the `rootPath` variable anywhere you want to grab static files relative to your directory. `rootPath` will 
 find the root folder no matter how many levels deep your templates are.
 
-For example, if the following line of code where placed in `dir3/foo/bar/baz/index.html`
+For example, if the following line of markup were placed in `dir3/foo/bar/baz/index.html`
 ```html
 <link src="{{rootPath}}css/main.css" type="text/css" />
 ```
