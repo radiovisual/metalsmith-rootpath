@@ -1,10 +1,13 @@
-# metalsmith-rootpath [![Build Status](https://travis-ci.org/radiovisual/metalsmith-rootpath.svg)](https://travis-ci.org/radiovisual/metalsmith-rootpath)
+# metalsmith-rootpath
+
 > Easily find the relative path to the root directory in your Metalsmith templates.
 > 
 > *Makes relative-to-root links a breeze!*
 
+[![Build Status](https://travis-ci.org/radiovisual/metalsmith-rootpath.svg)](https://travis-ci.org/radiovisual/metalsmith-rootpath)
+
 ## Install
-```sh
+```
 $ npm install --save metalsmith-rootpath
 ```
     
@@ -27,17 +30,20 @@ Metalsmith(__dirname)
 Let's assume you have a directory structure like this:
 
 ```
-        index.html
-        dir1/
-           index.html
-        dir2/
-           foo/
-              index.html
-        dir3/
-           foo/
-              bar/
-                 baz/
-                   index.html
+├──index.html
+│ 
+├──dir1
+│   └─index.html
+│        
+├───dir2       
+│   └─foo
+│     └─index.html
+│       
+├───dir3   
+│   └─foo
+│     └─bar
+│       └─baz
+│         └─index.html
 ```
 
 The `rootPath` values in each `index.html` file would be:
