@@ -23,7 +23,7 @@ Metalsmith(__dirname)
   
 ```
 
-**Now you have a `rootPath` value assigned to the metadata of the files in your Metalsmith build.** 
+#### Now the files in your Metalsmith build have a `rootPath` variable assigned to them.
 
 ## Examples
 
@@ -33,17 +33,17 @@ Let's assume you have a directory structure like this:
 ├──index.html
 │ 
 ├──dir1
-│   └─index.html
+│  └─index.html
 │        
-├───dir2       
-│   └─foo
+├──dir2       
+│  └─foo
 │     └─index.html
 │       
-├───dir3   
-│   └─foo
-│     └─bar
-│       └─baz
-│         └─index.html
+├──dir3   
+│  └─foo
+│    └─bar
+│      └─baz
+│        └─index.html
 ```
 
 The `rootPath` values in each `index.html` file would be:
@@ -60,7 +60,7 @@ The `rootPath` values in each `index.html` file would be:
 Use the `rootPath` variable anywhere you want to grab static files relative to your directory. `rootPath` will 
 find the root folder no matter how many levels deep your templates are.
 
-For example, if the following line of markup were placed in `dir3/foo/bar/baz/index.html`
+For example, if the following line of markup were placed in `dir3/foo/bar/baz/index.html`:
 ```html
 <link src="{{rootPath}}css/main.css" type="text/css" />
 ```
