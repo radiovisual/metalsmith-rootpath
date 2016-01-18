@@ -30,20 +30,21 @@ Metalsmith(__dirname)
 Let's assume you have a directory structure like this:
 
 ```
-├──index.html
+.
+├── index.html
 │ 
-├──dir1
-│  └─index.html
+├── dir1
+│   └── index.html
 │        
-├──dir2       
-│  └─foo
-│     └─index.html
+├── dir2       
+│   └── foo
+│       └── index.html
 │       
-├──dir3   
-│  └─foo
-│    └─bar
-│      └─baz
-│        └─index.html
+├── dir3   
+│   └── foo
+│       └── bar
+│           └── baz
+│               └── index.html
 ```
 
 The `rootPath` values in each `index.html` file would be:
