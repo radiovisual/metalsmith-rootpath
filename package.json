@@ -1,13 +1,13 @@
 {
   "name": "metalsmith-rootpath",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Easily find the relative path to the root directory in your Metalsmith templates",
   "main": "lib/index.js",
   "files": [
     "index.js"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "xo && mocha"
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,15 @@
     "harmonize": "^1.4.4",
     "metalsmith": "^2.0.1",
     "mocha": "^2.2.5",
-    "rimraf": "^2.4.2"
+    "rimraf": "^2.4.2",
+    "xo": "^0.12.1"
+  },
+  "xo": {
+    "ignores": [
+      "test/*"
+    ]
+  },
+  "dependencies": {
+    "needle-string": "0.0.1"
   }
 }

@@ -7,11 +7,13 @@
 [![Build Status](https://travis-ci.org/radiovisual/metalsmith-rootpath.svg)](https://travis-ci.org/radiovisual/metalsmith-rootpath)
 
 ## Install
+
 ```
 $ npm install --save metalsmith-rootpath
 ```
     
 ## Usage
+
 ```js
 var rootPath = require('metalsmith-rootpath');
 
@@ -70,9 +72,6 @@ It would result in the following output:
 ```html
 <link src="../../../../css/main.css" type="text/css" />
 ```
-
-
-
 
 #### Relative Navigation
 
