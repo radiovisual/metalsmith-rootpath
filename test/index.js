@@ -4,6 +4,7 @@ var rootPath = require('../');
 var Metalsmith = require('metalsmith');
 var assert = require('assert');
 var rm = require('rimraf').sync;
+var path = require('path');
 describe('metalsmith-rootpath', function () {
 	beforeEach(function () {
 		rm('/test/fixtures/build');
@@ -40,7 +41,8 @@ describe('metalsmith-rootpath', function () {
 				if (err) {
 					return done(err);
 				}
-				assert.equal(files['1.0/index.html'].rootPath, '../');
+				var file = path.join('1.0', 'index.html');
+				assert.equal(files[file].rootPath, '../');
 				done();
 			});
 	});
@@ -52,7 +54,8 @@ describe('metalsmith-rootpath', function () {
 				if (err) {
 					return done(err);
 				}
-				assert.equal(files['1.0/1.1/index.html'].rootPath, '../../');
+				var file = path.join('1.0', '1.1', 'index.html');
+				assert.equal(files[file].rootPath, '../../');
 				done();
 			});
 	});
@@ -64,7 +67,8 @@ describe('metalsmith-rootpath', function () {
 				if (err) {
 					return done(err);
 				}
-				assert.equal(files['1.0/1.1/1.2/index.html'].rootPath, '../../../');
+				var file = path.join('1.0', '1.1', '1.2', 'index.html');
+				assert.equal(files[file].rootPath, '../../../');
 				done();
 			});
 	});
@@ -76,7 +80,8 @@ describe('metalsmith-rootpath', function () {
 				if (err) {
 					return done(err);
 				}
-				assert.equal(files['1.0/1.1/1.2/1.3/index.html'].rootPath, '../../../../');
+				var file = path.join('1.0', '1.1', '1.2', '1.3', 'index.html');
+				assert.equal(files[file].rootPath, '../../../../');
 				done();
 			});
 	});
