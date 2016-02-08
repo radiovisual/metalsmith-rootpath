@@ -60,6 +60,7 @@ The `rootPath` values in each `index.html` file would be:
 
 
 #### Relative Links
+
 Use the `rootPath` variable anywhere you want to grab static files relative to your directory. `rootPath` will 
 find the root folder no matter how many levels deep your templates are.
 
