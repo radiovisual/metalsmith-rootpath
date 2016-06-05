@@ -14,6 +14,8 @@ $ npm install --save metalsmith-rootpath
     
 ## Usage
 
+**Note:** metalsmith-rootpath must run after any plugins that move files around, or create new files in your metalsmith build chain (like [metalsmith-permalinks](https://github.com/segmentio/metalsmith-permalinks), for example).
+
 ```js
 var rootPath = require('metalsmith-rootpath');
 
@@ -91,8 +93,7 @@ template `partials/navigation.hbs`
 
 1. I am using the Handlebars syntax in the above examples, but the `rootPath` value is assigned to every file's metadata, 
 so it can be accessed just as easily with your template language of choice.
-1. This plugin is only useful if your `build/` directory is identical to your `src/` structure. Meaning, none of the 
-Metalsmith plugins you have on your build chain change the directory structure you have presented in your `src` folder.
+1. You must run metalsmith-rootpath **AFTER** any other metalsmith plugins that move or create files, otherwise the rootPath value won't be assigned to any moved or created files. For example, if you are running the [metalsmith-permalinks](https://github.com/segmentio/metalsmith-permalinks) plugin that moves/creates files, then run metalsmith-rootpath **AFTER** you run permalinks.   
 
 ### License 
 
