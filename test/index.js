@@ -107,4 +107,7 @@ describe('metalsmith-rootpath', function () {
 			});
 	});
 
+	after(function () {
+		rm('/test/fixtures/reorder/build');
+	})
 });
