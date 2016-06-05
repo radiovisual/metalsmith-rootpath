@@ -6,7 +6,10 @@
 
 [![Build Status](https://travis-ci.org/radiovisual/metalsmith-rootpath.svg)](https://travis-ci.org/radiovisual/metalsmith-rootpath)
 
-**Note:** metalsmith-rootpath must run **after** any plugins that move files around, or create new files in your metalsmith build chain (like [metalsmith-permalinks](https://github.com/segmentio/metalsmith-permalinks), for example). This is because metalsmith-rootpath needs to know what your final output directory will look like before it can assign a correct rootPath value. 
+**Note:** metalsmith-rootpath must run **after** any plugins that move files around, or create new files in your
+metalsmith build chain (like [metalsmith-permalinks](https://github.com/segmentio/metalsmith-permalinks), for example).
+This is because metalsmith-rootpath needs to know what your final output directory will look like before it can assign
+a correct rootPath value. 
 
 
 ## Install
@@ -28,7 +31,9 @@ Metalsmith(__dirname)
   
 ```
 
-:sunglasses: **Now all the files and templates in your Metalsmith build have a `rootPath` variable assigned to them!** I am using the handlebars template in the examples below, but you can use your template language of choice, or access the rootPath value from the file's metadata in anyway you like.
+:sunglasses: **Now all the files and templates in your Metalsmith build have a `rootPath` variable assigned to them!**
+I am using the handlebars template in the examples below, but you can use your template language of choice, or access
+the rootPath value from the file's metadata in anyway you like.
 
 
 ## Examples
@@ -77,6 +82,7 @@ It would result in the following output:
 ```html
 <link src="../../../../css/main.css" type="text/css" />
 ```
+
 
 #### Relative Navigation
 
