@@ -69,7 +69,8 @@ The `rootPath` values in each `index.html` file would be:
 | dir3/foo/bar/baz/index.html        | "../../../../"    | 
 
 
-#### Relative Links  
+
+## Relative Links  
 
 Use the `rootPath` variable anywhere you want to grab static files relative to your directory. `rootPath` will 
 find the root folder no matter how many levels deep your templates are.
@@ -85,7 +86,7 @@ It would result in the following output:
 ```
 
 
-#### Relative Navigation  
+## Relative Navigation  
 
 This `rootPath` variable is useful when building a relative navigation structure, for example, in your Handlebars 
 template `partials/navigation.hbs`
