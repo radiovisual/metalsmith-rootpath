@@ -4,6 +4,7 @@ var needles = require('needle-string');
 /**
  * Expose `plugin`.
  */
+
 module.exports = plugin;
 
 /**
@@ -12,6 +13,7 @@ module.exports = plugin;
  *
  * @return {Function}
  */
+
 function plugin() {
 	return function (files, metalsmith, done) {
 		Object.keys(files).forEach(function (file) {

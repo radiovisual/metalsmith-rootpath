@@ -17,7 +17,8 @@ a correct rootPath value.
 ```
 $ npm install --save metalsmith-rootpath
 ```
-    
+
+
 ## Usage
 
 ```js
@@ -40,23 +41,23 @@ the rootPath value from the file's metadata in anyway you like.
 
 Let's assume you have a directory structure like this:
 
-```
-.
-├── index.html
-│ 
-├── dir1
-│   └── index.html
-│        
-├── dir2       
-│   └── foo
-│       └── index.html
-│       
-├── dir3   
-│   └── foo
-│       └── bar
-│           └── baz
-│               └── index.html
-```
+    .
+    ├── index.html
+    │
+    ├─┬ dir1/
+    │ └── index.html
+    │  
+    ├─┬ dir2/ 
+    │ └─┬ foo/
+    │   └── index.html
+    │
+    └─┬ dir3/ 
+      └─┬ foo/
+        └─┬ bar/
+          └─┬ baz/
+            └── index.html
+
+
 
 The `rootPath` values in each `index.html` file would be:
 
@@ -68,7 +69,7 @@ The `rootPath` values in each `index.html` file would be:
 | dir3/foo/bar/baz/index.html        | "../../../../"    | 
 
 
-#### Relative Links
+#### Relative Links  
 
 Use the `rootPath` variable anywhere you want to grab static files relative to your directory. `rootPath` will 
 find the root folder no matter how many levels deep your templates are.
@@ -84,7 +85,7 @@ It would result in the following output:
 ```
 
 
-#### Relative Navigation
+#### Relative Navigation  
 
 This `rootPath` variable is useful when building a relative navigation structure, for example, in your Handlebars 
 template `partials/navigation.hbs`
@@ -98,7 +99,7 @@ template `partials/navigation.hbs`
 ```
 
 
-### License 
+### License  
 
 MIT @ [Michael Wuergler](http://www.numetriclabs.com)
 
