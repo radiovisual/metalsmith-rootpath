@@ -50,6 +50,6 @@
     }
   },
   "dependencies": {
-    "needle-string": "0.0.1"
+    "needle-string": "1.0.0"
   }
 }
