@@ -44,17 +44,17 @@ Let's assume you have a directory structure like this:
     .
     ├── index.html
     │
-    ├─┬ dir1/
+    ├─┬ dir1  
     │ └── index.html
     │  
-    ├─┬ dir2/ 
-    │ └─┬ foo/
+    ├─┬ dir2  
+    │ └─┬ foo
     │   └── index.html
     │
-    └─┬ dir3/ 
-      └─┬ foo/
-        └─┬ bar/
-          └─┬ baz/
+    └─┬ dir3  
+      └─┬ foo
+        └─┬ bar
+          └─┬ baz
             └── index.html
 
 
