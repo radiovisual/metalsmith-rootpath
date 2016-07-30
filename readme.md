@@ -33,8 +33,8 @@ Metalsmith(__dirname)
 ```
 
 :sunglasses: **Now all the files and templates in your Metalsmith build have a `rootPath` variable assigned to them!**
-I am using the handlebars template in the examples below, but you can use your template language of choice, or access
-the rootPath value from the file's metadata in anyway you like.
+I am using the handlebars template langauge in the examples below, but you can use your template language of choice, or access
+the rootPath value from the file's metadata anyway you like.
 
 
 ## Examples
@@ -59,7 +59,7 @@ Let's assume you have a directory structure like this:
 
 
 
-The `rootPath` values in each `index.html` file would be:
+The `rootPath` value in each `index.html` file would be:
 
 | File                               | `rootPath`        |
 | :----------------------------------|:------------------|
@@ -88,7 +88,7 @@ It would result in the following output:
 
 ## Relative Navigation  
 
-This `rootPath` variable is useful when building a relative navigation structure, for example, in your Handlebars 
+The `rootPath` variable is useful when building a relative navigation structure, for example, in your Handlebars 
 template `partials/navigation.hbs`
 
 ```html
