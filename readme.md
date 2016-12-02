@@ -33,8 +33,8 @@ Metalsmith(__dirname)
 ```
 
 :sunglasses: **Now all the files and templates in your Metalsmith build have a `rootPath` variable assigned to them!**
-I am using the handlebars template langauge in the examples below, but you can use your template language of choice, or access
-the rootPath value from the file's metadata anyway you like.
+I am using the handlebars template language in the examples below, but you can use your template language of choice, or access
+the `rootPath` value from the file's metadata anyway you like.
 
 
 ## Examples
